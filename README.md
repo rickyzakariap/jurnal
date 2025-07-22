@@ -2,7 +2,7 @@ Memantaskan Diri: Sebuah Jurnal Digital
 Proyek ini lebih dari sekadar halaman web. Ini adalah sebuah pengakuan yang tertuang dalam format jurnal; sebuah surat terbuka tentang penyesalan, kesadaran yang datang terlambat, dan sebuah janji untuk memulai perjalanan memantaskan diri.
 
 Pratinjau Langsung
-Anda dapat melihat hasil akhirnya di sini: [Link ke GitHub Pages Anda]
+Anda dapat melihat hasil akhirnya di sini: https://github.com/rickyzakariap/jurnal
 
 Filosofi Desain
 Setiap elemen visual di halaman ini dipilih untuk menceritakan sebuah kisah.
