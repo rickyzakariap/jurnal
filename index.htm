@@ -8,116 +8,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Tinos', 'Times New Roman', serif;
-            line-height: 1.7; /* Sedikit menambah spasi antar baris agar lebih nyaman dibaca */
-            color: #1e293b; /* Warna teks slate-800 agar tidak terlalu hitam pekat */
-        }
-        .journal-content {
-            text-align: justify;
-        }
-        /* Terapkan dua kolom hanya di layar besar (lg) */
-        @media (min-width: 1024px) {
-            .journal-content {
-                column-count: 2;
-                column-gap: 2.5rem;
-            }
-        }
-        /* Paragraf menjorok ke dalam */
-        .journal-content p {
-            text-indent: 1.5em;
-            margin-bottom: 0.5rem;
-        }
-        /* Menghilangkan indentasi untuk paragraf pertama setelah subjudul */
-        h2 + p, h3 + p {
-            text-indent: 0;
-        }
-        h1 {
-            font-family: 'Tinos', serif;
-            font-weight: 700;
-        }
-        h2 {
-            font-weight: 700;
-            font-size: 1.125rem; /* 18px */
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            break-after: avoid; /* Mencegah judul terpisah dari paragrafnya */
-        }
-        h3 {
-            font-weight: 700;
-            font-size: 1rem; /* 16px */
-            margin-top: 1rem;
-            margin-bottom: 0.25rem;
-            break-after: avoid;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Jurnal digital introspektif tentang penyesalan, kesadaran, dan perjalanan memantaskan diri. Studi kasus nyata, inspirasi film Sore.">
+    <meta property="og:title" content="Memantaskan Diri: Sebuah Perjalanan Introspektif">
+    <meta property="og:description" content="Jurnal digital introspektif tentang penyesalan, kesadaran, dan perjalanan memantaskan diri. Studi kasus nyata, inspirasi film Sore.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="id_ID">
 </head>
 <body class="bg-slate-50">
 
-    <div class="container mx-auto p-6 md:p-10 max-w-5xl bg-white shadow-lg my-8 rounded-lg">
-        
-        <!-- Judul dan Penulis -->
-        <header class="text-center mb-6">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl mb-3">Memantaskan Diri: Sebuah Perjalanan Introspektif dari Penyesalan Menuju Penebusan</h1>
-            <p class="text-base md:text-lg">Ricky Zakaria P</p>
-            <p class="text-sm italic text-slate-600">Penulis Lepas</p>
+    <div class="journal-wrapper">
+        <header>
+            <h1 class="journal-title">Memantaskan Diri: Sebuah Perjalanan Introspektif dari Penyesalan Menuju Penebusan</h1>
+            <p class="journal-author">Ricky Zakaria P</p>
+            <p class="journal-affiliation"><i>Penulis Lepas</i></p>
         </header>
-
-        <hr class="my-8 border-t border-slate-300">
-
-        <!-- Abstrak dan Kata Kunci -->
-        <div class="mb-8 border border-slate-300 rounded-lg p-4">
-            <h2 class="font-bold text-center uppercase !mt-0 text-base">Abstrak</h2>
-            <p class="italic text-justify text-sm md:text-base">
-                Penelitian kualitatif ini mengkaji fenomena pergeseran persepsi secara drastis pada seorang penulis (selanjutnya disebut subjek) dalam hubungan romantisnya. Subjek pada awalnya memandang upaya konstruktif dari pasangannya, Gita Yuniar, sebagai bentuk restriksi yang mengganggu. Namun, sebuah katalis eksternal berupa paparan karya sinematik "Sore: Istri dari Masa Depan" telah memicu epifani yang mendalam. Dalam film tersebut, subjek mengidentifikasi dirinya dengan karakter Jonathan dan melihat refleksi pasangannya pada karakter Sore. Penelitian ini menganalisis proses internal yang terjadi, mulai dari disonansi kognitif awal, momen kesadaran, hingga resolusi untuk melakukan transformasi diri yang proaktif. Hasilnya menunjukkan bahwa identifikasi dengan narasi media dapat menjadi pemicu kuat untuk reevaluasi diri dan memotivasi perubahan perilaku.
+        <section class="journal-abstract">
+            <b>ABSTRAK</b>
+            <p>
+                Penelitian kualitatif ini mengkaji fenomena pergeseran persepsi secara drastis pada seorang penulis (selanjutnya disebut subjek) dalam hubungan romantisnya. Subjek pada awalnya memandang upaya konstruktif dari pasangannya, <i>Gita Yuniar</i>, sebagai bentuk restriksi yang mengganggu. Namun, sebuah katalis eksternal berupa paparan karya sinematik <i>"Sore: Istri dari Masa Depan"</i> telah memicu epifani yang mendalam. Dalam film tersebut, subjek mengidentifikasi dirinya dengan karakter <i>Jonathan</i> dan melihat refleksi pasangannya pada karakter <i>Sore</i>. Penelitian ini menganalisis proses internal yang terjadi, mulai dari disonansi kognitif awal, momen kesadaran, hingga resolusi untuk melakukan transformasi diri yang proaktif. Hasilnya menunjukkan bahwa identifikasi dengan narasi media dapat menjadi pemicu kuat untuk reevaluasi diri dan memotivasi perubahan perilaku.
             </p>
-            <p class="mt-4 text-sm md:text-base">
-                <span class="font-bold">Kata Kunci:</span>
-                <span class="italic">Dinamika Hubungan, Perubahan Persepsi, Disonansi Kognitif, Epifani, Transformasi Diri, Komunikasi Interpersonal.</span>
-            </p>
-        </div>
-
-        <!-- Konten Utama -->
+            <p><i>Kata Kunci:</i> <i>Dinamika Hubungan, Perubahan Persepsi, Disonansi Kognitif, Epifani, Transformasi Diri, Komunikasi Interpersonal.</i></p>
+        </section>
         <main class="journal-content">
             <h2>1. Pendahuluan</h2>
-            <p>
-                Dalam sebuah hubungan romantis jangka panjang, komunikasi dan persepsi memegang peranan krusial. Namun, tidak jarang terjadi bias persepsi di mana salah satu pihak gagal menginterpretasikan niat baik pasangannya secara akurat. Nasihat dan arahan yang bertujuan untuk kebaikan bersama dapat dipersepsikan secara keliru sebagai bentuk kontrol. Fenomena ini menciptakan dinamika yang tidak sehat, di mana satu pihak terus berjuang untuk perbaikan, sementara pihak lain secara konsisten menolak.
-            </p>
-            <p>
-                Studi kasus ini meneliti sebuah pengalaman personal dari penulis (selanjutnya disebut subjek) yang secara konsisten menunjukkan pola resistensi terhadap upaya konstruktif dari pasangannya, Gita Yuniar. Gita Yuniar secara aktif memberikan dukungan dan arahan demi peningkatan kualitas hubungan. Namun, subjek secara persisten menganggap tindakan tersebut sebagai gangguan dan mempertahankan keyakinan bahwa tindakannya sendiri adalah yang paling benar. Tulisan ini bertujuan untuk membedah titik balik yang memicu perubahan persepsi subjek dan bagaimana kesadaran tersebut mengarah pada sebuah komitmen untuk berubah.
-            </p>
-
+            <p>Dalam sebuah hubungan romantis jangka panjang, komunikasi dan persepsi memegang peranan krusial. Namun, tidak jarang terjadi bias persepsi di mana salah satu pihak gagal menginterpretasikan niat baik pasangannya secara akurat. Nasihat dan arahan yang bertujuan untuk kebaikan bersama dapat dipersepsikan secara keliru sebagai bentuk kontrol. Fenomena ini menciptakan dinamika yang tidak sehat, di mana satu pihak terus berjuang untuk perbaikan, sementara pihak lain secara konsisten menolak.</p>
+            <p>Studi kasus ini meneliti sebuah pengalaman personal dari penulis (selanjutnya disebut subjek) yang secara konsisten menunjukkan pola resistensi terhadap upaya konstruktif dari pasangannya, Gita Yuniar. Gita Yuniar secara aktif memberikan dukungan dan arahan demi peningkatan kualitas hubungan. Namun, subjek secara persisten menganggap tindakan tersebut sebagai gangguan dan mempertahankan keyakinan bahwa tindakannya sendiri adalah yang paling benar. Tulisan ini bertujuan untuk membedah titik balik yang memicu perubahan persepsi subjek dan bagaimana kesadaran tersebut mengarah pada sebuah komitmen untuk berubah.</p>
             <h2>2. Metodologi Analisis</h2>
-            <p>
-                Penelitian ini menggunakan pendekatan kualitatif dengan metode analisis naratif introspektif. Data primer diperoleh dari refleksi mendalam subjek terhadap perasaan, pikiran, dan perilakunya sebelum dan sesudah momen epifani. Katalis utama dalam studi ini adalah paparan terhadap film <i>Sore: Istri dari Masa Depan</i>. Analisis berfokus pada dekonstruksi proses kognitif dan emosional yang terjadi saat subjek mengidentifikasi dinamika hubungannya dengan Gita Yuniar melalui karakter film Jonathan dan Sore.
-            </p>
-
+            <p>Penelitian ini menggunakan pendekatan kualitatif dengan metode analisis naratif introspektif. Data primer diperoleh dari refleksi mendalam subjek terhadap perasaan, pikiran, dan perilakunya sebelum dan sesudah momen epifani. Katalis utama dalam studi ini adalah paparan terhadap film <i>Sore: Istri dari Masa Depan</i>. Analisis berfokus pada dekonstruksi proses kognitif dan emosional yang terjadi saat subjek mengidentifikasi dinamika hubungannya dengan Gita Yuniar melalui karakter film Jonathan dan Sore.</p>
             <h2>3. Hasil dan Pembahasan</h2>
             <h3>3.1. Fase Resistensi: Egoisme dan Penolakan sebagai Pola Hidup</h3>
-            <p>
-                Sebelum terjadinya epifani, perilaku subjek didominasi oleh egoisme yang termanifestasi dalam penolakan halus namun konsisten. Di satu sisi, ia memiliki afeksi terhadap Gita Yuniar, namun afeksi tersebut tidak cukup kuat untuk menumbangkan benteng ego yang telah ia bangun. Pola ini terlihat jelas dalam situasi sehari-hari. Sebagai contoh, setelah melewati hari yang melelahkan, Gita Yuniar seringkali menanti sebuah interaksi ringan, sebuah momen untuk terhubung. Namun, subjek, dengan dalih mencari hiburan yang "lebih asik", justru memilih untuk berinteraksi dengan orang lain, mengabaikan penantian pasangannya. Tindakan ini bukan sekadar pilihan, melainkan sebuah pernyataan bahwa kenyamanan sesaatnya lebih berharga daripada kebutuhan emosional pasangannya. Upaya Gita Yuniar untuk memberikan arahan, baik tentang kesehatan, manajemen waktu, maupun masa depan hubungan, tidak dilihat sebagai bentuk kepedulian. Sebaliknya, hal itu dipersepsikan sebagai kritik implisit yang mengancam otonomi dan superioritasnya, menciptakan siklus frustrasi yang menyakitkan bagi Gita Yuniar dan rasa puas yang dangkal bagi subjek.
-            </p>
-
+            <p>Sebelum terjadinya epifani, perilaku subjek didominasi oleh egoisme yang termanifestasi dalam penolakan halus namun konsisten. Di satu sisi, ia memiliki afeksi terhadap Gita Yuniar, namun afeksi tersebut tidak cukup kuat untuk menumbangkan benteng ego yang telah ia bangun. Pola ini terlihat jelas dalam situasi sehari-hari. Sebagai contoh, setelah melewati hari yang melelahkan, Gita Yuniar seringkali menanti sebuah interaksi ringan, sebuah momen untuk terhubung. Namun, subjek, dengan dalih mencari hiburan yang "lebih asik", justru memilih untuk berinteraksi dengan orang lain, mengabaikan penantian pasangannya. Tindakan ini bukan sekadar pilihan, melainkan sebuah pernyataan bahwa kenyamanan sesaatnya lebih berharga daripada kebutuhan emosional pasangannya. Upaya Gita Yuniar untuk memberikan arahan, baik tentang kesehatan, manajemen waktu, maupun masa depan hubungan, tidak dilihat sebagai bentuk kepedulian. Sebaliknya, hal itu dipersepsikan sebagai kritik implisit yang mengancam otonomi dan superioritasnya, menciptakan siklus frustrasi yang menyakitkan bagi Gita Yuniar dan rasa puas yang dangkal bagi subjek.</p>
             <h3>3.2. Katalis Eksternal: Cermin yang Menyakitkan</h3>
-            <p>
-                Paparan terhadap narasi film <i>Sore: Istri dari Masa Depan</i> menjadi titik balik krusial. Awalnya, subjek menontonnya sebagai hiburan biasa. Namun, seiring berjalannya cerita, ia mulai melihat paralel yang mengerikan antara dinamika di layar dengan realitasnya sendiri. Ia melihat karakter Jonathan yang keras kepala, yang menolak kebaikan yang ditawarkan, dan ia melihat dirinya sendiri di dalam karakter itu. Puncaknya adalah saat ia melihat perjuangan karakter Sore. Setiap kesabaran, setiap nasihat yang ditolak, setiap pengorbanan yang tak terlihat dari karakter Sore, menjadi cerminan langsung dari apa yang telah dilakukan Gita Yuniar untuknya selama ini. Narasi eksternal ini meruntuhkan mekanisme pertahanan dirinya, memaksanya melihat perjuangan Gita Yuniar bukan lagi dari sudut pandangnya yang sempit, melainkan dari perspektif cinta tanpa syarat yang selama ini ia terima namun tak pernah ia hargai.
-            </p>
-
+            <p>Paparan terhadap narasi film <i>Sore: Istri dari Masa Depan</i> menjadi titik balik krusial. Awalnya, subjek menontonnya sebagai hiburan biasa. Namun, seiring berjalannya cerita, ia mulai melihat paralel yang mengerikan antara dinamika di layar dengan realitasnya sendiri. Ia melihat karakter Jonathan yang keras kepala, yang menolak kebaikan yang ditawarkan, dan ia melihat dirinya sendiri di dalam karakter itu. Puncaknya adalah saat ia melihat perjuangan karakter Sore. Setiap kesabaran, setiap nasihat yang ditolak, setiap pengorbanan yang tak terlihat dari karakter Sore, menjadi cerminan langsung dari apa yang telah dilakukan Gita Yuniar untuknya selama ini. Narasi eksternal ini meruntuhkan mekanisme pertahanan dirinya, memaksanya melihat perjuangan Gita Yuniar bukan lagi dari sudut pandangnya yang sempit, melainkan dari perspektif cinta tanpa syarat yang selama ini ia terima namun tak pernah ia hargai.</p>
             <h3>3.3. Epifani: Banjir Penyesalan dan Rindu yang Terlambat</h3>
-            <p>
-                Momen kesadaran ini diikuti oleh respon emosional yang dahsyat. Rasa sesal tidak datang sedikit demi sedikit, melainkan seperti banjir yang merobohkan segalanya. Memori-memori yang dulu ia anggap sepele kini kembali dengan bobot yang luar biasa berat: wajah lelah Gita Yuniar saat ia memilih pergi, nada suaranya yang penuh harap saat memberi nasihat, dan keheningan yang menyakitkan saat ia sadar usahanya sia-sia. Rasa sesal ini semakin diperdalam oleh kesadaran pahit bahwa tanggal 30 Juli, hari yang seharusnya menjadi perayaan dua tahun hubungan mereka, akan segera tiba; sebuah tonggak sejarah yang kini terasa mustahil untuk dirayakan karena kealpaannya sendiri. Air mata yang berlinang menjadi katarsis, sebuah pelepasan dari keangkuhan yang selama ini ia pelihara. Subjek akhirnya menyadari bahwa apa yang ia anggap sebagai "gangguan" dari Gita Yuniar sebenarnya adalah doa yang tak henti-hentinya dipanjatkan. Rasa rindu yang muncul pun terasa berbeda. Bukan lagi rindu biasa, melainkan rindu yang bercampur dengan penyesalan mendalam; rindu untuk bisa kembali ke masa lalu, bukan untuk mengubah takdir, tapi hanya untuk mendengarkan, untuk menghargai, dan untuk mengatakan "terima kasih" pada momen yang tepat.
-            </p>
-            
+            <p>Momen kesadaran ini diikuti oleh respon emosional yang dahsyat. Rasa sesal tidak datang sedikit demi sedikit, melainkan seperti banjir yang merobohkan segalanya. Memori-memori yang dulu ia anggap sepele kini kembali dengan bobot yang luar biasa berat: wajah lelah Gita Yuniar saat ia memilih pergi, nada suaranya yang penuh harap saat memberi nasihat, dan keheningan yang menyakitkan saat ia sadar usahanya sia-sia. Rasa sesal ini semakin diperdalam oleh kesadaran pahit bahwa tanggal 30 Juli, hari yang seharusnya menjadi perayaan dua tahun hubungan mereka, akan segera tiba; sebuah tonggak sejarah yang kini terasa mustahil untuk dirayakan karena kealpaannya sendiri. Air mata yang berlinang menjadi katarsis, sebuah pelepasan dari keangkuhan yang selama ini ia pelihara. Subjek akhirnya menyadari bahwa apa yang ia anggap sebagai "gangguan" dari Gita Yuniar sebenarnya adalah doa yang tak henti-hentinya dipanjatkan. Rasa rindu yang muncul pun terasa berbeda. Bukan lagi rindu biasa, melainkan rindu yang bercampur dengan penyesalan mendalam; rindu untuk bisa kembali ke masa lalu, bukan untuk mengubah takdir, tapi hanya untuk mendengarkan, untuk menghargai, dan untuk mengatakan "terima kasih" pada momen yang tepat.</p>
             <h3>3.4. Resolusi: Komitmen untuk Memantaskan Diri</h3>
-            <p>
-                Kesadaran yang menyakitkan ini melahirkan sebuah resolusi fundamental. Subjek memahami bahwa perubahan sejati tidak bisa lagi hanya diharapkan dari usaha eksternal pasangannya. Inisiatif harus lahir dari dalam dirinya, sebagai bentuk pertanggungjawaban atas semua luka dan pengabaian yang telah ia sebabkan. Ia menyadari bahwa tanggung jawabnya kini bukan hanya "berubah", tetapi "memantaskan diri". Ia harus membangun kembali dirinya dari puing-puing egoisme, menjadi pribadi yang layak menerima cinta sebesar yang telah diberikan Gita Yuniar. Ini menandai pergeseran dari sikap reaktif menjadi proaktif. Tujuannya bukan lagi sekadar memperbaiki hubungan, tetapi menjadi "rumah" yang aman dan menenangkan, tempat di mana Gita Yuniar akhirnya bisa beristirahat dari perjuangannya yang panjang.
-            </p>
-            
+            <p>Kesadaran yang menyakitkan ini melahirkan sebuah resolusi fundamental. Subjek memahami bahwa perubahan sejati tidak bisa lagi hanya diharapkan dari usaha eksternal pasangannya. Inisiatif harus lahir dari dalam dirinya, sebagai bentuk pertanggungjawaban atas semua luka dan pengabaian yang telah ia sebabkan. Ia menyadari bahwa tanggung jawabnya kini bukan hanya "berubah", tetapi "memantaskan diri". Ia harus membangun kembali dirinya dari puing-puing egoisme, menjadi pribadi yang layak menerima cinta sebesar yang telah diberikan Gita Yuniar. Ini menandai pergeseran dari sikap reaktif menjadi proaktif. Tujuannya bukan lagi sekadar memperbaiki hubungan, tetapi menjadi "rumah" yang aman dan menenangkan, tempat di mana Gita Yuniar akhirnya bisa beristirahat dari perjuangannya yang panjang.</p>
             <h2>4. Kesimpulan</h2>
-            <p>
-                Studi kasus introspektif ini menunjukkan bahwa perubahan persepsi yang signifikan dalam hubungan romantis dapat dipicu oleh katalis eksternal yang berfungsi sebagai cermin reflektif. Pengalaman subjek mengilustrasikan bahwa kesadaran akan nilai pengorbanan pasangan (Gita Yuniar), yang direfleksikan melalui karakter fiksi (Sore), dapat meruntuhkan ego dan memotivasi komitmen tulus untuk melakukan transformasi diri. Perubahan ini bukan lagi didasari oleh paksaan, melainkan oleh rasa syukur, penyesalan, dan cinta yang diperbarui. Fenomena ini menggarisbawahi pentingnya empati dan kemampuan untuk melihat sebuah situasi dari sudut pandang pasangan.
-            </p>
+            <p>Studi kasus introspektif ini menunjukkan bahwa perubahan persepsi yang signifikan dalam hubungan romantis dapat dipicu oleh katalis eksternal yang berfungsi sebagai cermin reflektif. Pengalaman subjek mengilustrasikan bahwa kesadaran akan nilai pengorbanan pasangan (Gita Yuniar), yang direfleksikan melalui karakter fiksi (Sore), dapat meruntuhkan ego dan memotivasi komitmen tulus untuk melakukan transformasi diri. Perubahan ini bukan lagi didasari oleh paksaan, melainkan oleh rasa syukur, penyesalan, dan cinta yang diperbarui. Fenomena ini menggarisbawahi pentingnya empati dan kemampuan untuk melihat sebuah situasi dari sudut pandang pasangan.</p>
         </main>
     </div>
 

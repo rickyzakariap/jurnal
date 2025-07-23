@@ -1,0 +1,111 @@
+body {
+    font-family: 'Tinos', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #1e293b;
+    background: #f1f5f9; /* Lebih soft, modern */
+}
+.journal-wrapper {
+    background: #fff;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 48px 48px 48px 48px;
+    box-shadow: 0 4px 24px rgba(30,41,59,0.10);
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+}
+.journal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+.journal-author {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+    text-align: left;
+    color: #334155;
+}
+.journal-affiliation {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.journal-abstract {
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 2.2rem;
+    background: #f8fafc;
+    font-size: 1rem;
+    box-shadow: 0 1px 6px rgba(30,41,59,0.04);
+}
+.journal-abstract b {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+.journal-content {
+    column-count: 2;
+    column-gap: 2.5rem;
+    font-size: 1.08rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+.journal-content p {
+    text-indent: 1.5em;
+    margin-bottom: 0.5rem;
+}
+.journal-content h2 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+    break-after: avoid;
+}
+.journal-content h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    color: #334155;
+    break-after: avoid;
+}
+@media (max-width: 900px) {
+    .journal-wrapper {
+        padding: 18px 6vw;
+        border-radius: 10px;
+    }
+    .journal-content {
+        column-count: 1;
+        font-size: 1rem;
+    }
+}
+@media print {
+    body, html {
+        background: white !important;
+    }
+    .journal-wrapper {
+        box-shadow: none !important;
+        background: white !important;
+        max-width: 100% !important;
+        padding: 0.5in !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+    .journal-content {
+        column-count: 2 !important;
+        column-gap: 1.2in !important;
+        font-size: 12pt !important;
+        text-align: justify !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        break-after: avoid-page;
+    }
+    header, .journal-abstract {
+        page-break-inside: avoid;
+    }
+} 
