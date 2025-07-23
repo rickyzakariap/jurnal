@@ -1,7 +1,7 @@
-# Memantaskan Diri: Sebuah Jurnal Digital
+# Memantaskan Diri: A Digital Journal
 
-Jurnal introspektif tentang perjalanan, penyesalan, dan transformasi diri.
+An introspective journal about personal journey, regret, and self-transformation.
 
-🔗 [Preview Live](https://github.com/rickyzakariap/jurnal)
+🔗 [Live Preview](https://github.com/rickyzakariap/jurnal)
 
-**Teknologi:** HTML, Tailwind CSS
+**Tech Stack:** HTML, Custom CSS (Tailwind-inspired)
